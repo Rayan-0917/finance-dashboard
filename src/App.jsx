@@ -1,12 +1,12 @@
 import { Layout, User, ShieldCheck, Wallet, ArrowUpCircle, ArrowDownCircle, Search, Plus } from 'lucide-react';
 import './App.css'
-import SummaryCard from './components/summaryCard';
-import InsightsSection from './components/InsightsSection';
+import SummaryCard from './components/SummaryCard.jsx';
+import InsightsSection from './components/InsightsSection.jsx';
 import Chart from './components/Chart';
 import { useMemo, useState } from 'react';
-import TimeChart from './components/TimeChart';
-import TransactionTable from './components/TransactionTable';
-import Navbar from './components/Navbar';
+import TimeChart from './components/TimeChart.jsx';
+import TransactionTable from './components/TransactionTable.jsx';
+import Navbar from './components/Navbar.jsx';
 
 const INITIAL_DATA = [
   { id: 1, date: '2026-03-01', amount: 2500, category: 'Salary', type: 'income' },
