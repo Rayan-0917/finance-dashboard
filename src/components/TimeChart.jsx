@@ -114,7 +114,7 @@ const TimeChart = () => {
         </div>
       </div>
 
-      <div className='h-[350px]'>
+      <div className='h-87.5'>
         <Scatter data={chartData} options={options}/>
       </div>
 
