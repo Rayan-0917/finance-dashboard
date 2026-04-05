@@ -1,16 +1,27 @@
-# React + Vite
+Setup:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1.Prerequisites:
+Node.js (v16.0.0 or higher recommended)
+npm or yarn
 
-Currently, two official plugins are available:
+2.Clone the repository: https://github.com/Rayan-0917/finance-dashboard
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+3.Navigate into project directory: cd finance-dashboard
 
-## React Compiler
+4. Install dependencies: npm install
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+5. Start development server: npm run dev
 
-## Expanding the ESLint configuration
+Overview of approach:
+I focused on card based components with a grid like layout. Broke it down into focused and reusable components. Used static data to showcase the summary cards, insights and transaction table. Used a function to generate random mock data for time series charts. Focused on a clean UI which is easy on the user's eye.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Features:
+1. Role based access: Can toggle between viewer and admin
+   a. Viewer: Read-only access to charts and tables.
+   b. Admin: Unlocks operational actions like the "Add Transaction" and "Edit" row buttons
+2. Search and Filter in transaction table to get better insights on income and expenses.
+3. Graphs: To visualize the data better
+   a. Categorical graph: To understand the basic spending patterns
+   b. Time based graph: Shows expenses month wise and also per day for any particular month.
+4. Summary cards and insight card to show basic details cleanly.
+5. Responsive, works on all devices.
